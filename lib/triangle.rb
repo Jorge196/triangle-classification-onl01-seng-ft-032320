@@ -4,15 +4,15 @@ class Triangle
 
 
    if s1 >= (s2 + s3) || s2 >= (s1 + s3) || s3 >= (s1 + s2)
-     raise RangeError
+     raise TriangleError
    end
 
    if s1 <= 0 || s2 <= 0 ||s3 <= 0
-     raise RangeError
+     raise TriangleError
    end
 
    if s1 == nil || s2 == nil ||s3 == nil
-     raise RangeError
+     raise TriangleError
    end
 
    @s1 = s1
