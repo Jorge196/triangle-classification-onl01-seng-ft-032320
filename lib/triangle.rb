@@ -29,12 +29,12 @@ class Triangle
       else
         return :scalene
       end
-    else
-      raise TriangleError
     end
-  end
+    
 end
 
 class TriangleError < StandardError
-
+  def message
+    "This is not a valid triangle."
+  end
 end
